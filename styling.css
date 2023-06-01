@@ -1,0 +1,145 @@
+/* By Simon Garrad.*/
+html {
+    height: 100%;
+}
+body {
+    background: linear-gradient(#83e6da, #f8dfa0);
+    height: 100%;
+    margin: 0;
+}
+/* the centre circle */
+.CenterCircle {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    align-items: center;
+    transform: translate(100%, 50%);
+    background-color: #000000;
+    z-index: 0;
+    box-shadow: inset 0 6px 3px -3px white;
+}
+/* this is all the clickable buttons */
+.button {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    align-items: center;
+    z-index: 2;
+    box-shadow: inset 0 6px 3px -3px white;
+    cursor: pointer;
+}
+/* brightens the buttons on hover */
+.button:hover{
+    box-shadow: inset 0px 0px 50px 10px white;
+    box-sizing: border-box;
+}
+/* this is the black circle under each colour cicle */
+.blackCircle{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #000000;
+    z-index: 1;
+    box-shadow: inset 0 6px 3px -3px white;
+}
+/* these are the grey boxes */
+.infoBox{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+    align-items: center;
+    background-color: #e1e1e1;
+    z-index: 2;
+    text-align:center;
+    font-size: 25px;
+    font-family: 'Orbitron', serif;
+    line-height: 2;
+    box-shadow: inset 0 5px 3px -1px rgb(96, 93, 93);
+}
+/* colour circle */
+.green {
+    transform: translate(220%, 100%);
+    background: linear-gradient(#a5eea5, #019401);
+}
+/* the black behind the green */
+.greenBlack{
+    transform: translate(175%, 75%);
+}
+
+.red {
+    transform: translate(420%, 100%);
+    background: linear-gradient(#ea7a7a, #bd0000);
+}
+.redBlack{
+    transform: translate(341.5%, 75%);
+}
+
+.yellow {
+    transform: translate(220%, 300%);
+    background: linear-gradient(#e8e3a4, #ffbb00);
+}
+.yellowBlack{
+    transform: translate(175%, 241%);
+}
+
+.blue{
+    transform: translate(420%, 300%);
+    background: linear-gradient(#7aa8ff, #0042bb);
+}
+.blueBlack{
+    transform: translate(341.5%, 241%);
+}
+/* the grey box on the left */
+.box1 {
+    transform: translate(540%, 450%);
+}
+/* the centre grey box is a button */
+.startButton {
+    width: 100px;
+    transform: translate(325%, 450%);
+}
+.startButton:hover {
+    background: linear-gradient(#ace6a5, #ace6a5);
+    cursor: pointer;
+}
+/* the grey box on the right */
+.box3 {
+    transform: translate(860%, 450%);
+}
+/* the small light will change when the game is in play */
+.light {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    transform: translate(2455%, 1950%);
+    background-color: #ff0000;
+    background: linear-gradient(#ff0000, #940202);
+    border-radius: 50%;
+    align-items: center;
+    z-index: 2;
+    box-shadow: inset 0 5px 3px -3px white;
+}
+/* for when the light is acive */
+.activeLight {
+    background-color: #09ff00;
+    background: linear-gradient(#a2f581, #09ff00);
+}
+/* used to make the colour circles flash */
+.active{
+    z-index: 3;
+    background: linear-gradient(white, white);
+}
+/* used to turn all colour circles red when a mistake is made */
+.gameOver{
+    background-color: red;
+    background: linear-gradient(red, red);
+}
+
+/*
+references 
+https://css-tricks.com/almanac/properties/b/box-shadow/ 
+*/

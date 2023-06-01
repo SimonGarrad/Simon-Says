@@ -1,0 +1,44 @@
+<!-- By Simon Garrad.-->
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <link rel = "stylesheet" href = "styling.css">
+              <!-- the required font -->
+    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Orbitron">
+    <style>
+      body {
+        font-family: 'Orbitron', serif;
+        font-size: 30px;
+      }
+    </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class = "theCircleClass"> 
+              <!-- creates the colour circles -->
+                    <div onclick = "clicked(event.currentTarget)" id= "green" class="button green"></div>
+                    <div onclick = "clicked(event.currentTarget)" id = "red" class="button red"></div>
+                    <div onclick = "clicked(event.currentTarget)" id = "yellow" class="button yellow"></div>
+                    <div onclick = "clicked(event.currentTarget)" id = "blue" class="button blue"></div>
+                    <!-- creates the black circles under the colour circles -->
+                    <div id = "greenBlack" class="blackCircle greenBlack"></div>
+                    <div id = "redBlack" class="blackCircle redBlack"></div>
+                    <div id = "yellowBlack" class="blackCircle yellowBlack"></div>
+                    <div id = "blueBlack" class="blackCircle blueBlack"></div>
+                    <!-- the larce black centre circle -->
+                    <div id = "Center" class="CenterCircle"></div>
+                    <!-- the three grey boxes -->
+                    <div id = "box1" class="infoBox box1">00</div>
+                    <div id = "start" onclick = "start()" class="infoBox startButton">START</div>
+                    <div id = "box3" class="infoBox box3">00</div>
+                    <!-- the small round light -->
+                    <div id = "light" class="light"></div>
+            </div>  <!-- closes circleClass -->
+        </div>  <!-- closes wrapper -->
+        <script src="game.js"></script>
+    </body>
+</html>
